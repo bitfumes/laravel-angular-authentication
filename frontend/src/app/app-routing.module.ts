@@ -12,7 +12,7 @@ const appRoutes: Routes = [
     component: LoginComponent
   },
   {
-    path: 'singup',
+    path: 'signup',
     component: SignupComponent
   },
   {

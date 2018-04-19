@@ -7,7 +7,7 @@ export class AuthService {
   authStatus = this.loggedIn.asObservable();
 
   changeAuthStatus(value: boolean) {
-    this.loggedIn.next(value)
+    this.loggedIn.next(value);
   }
 
   constructor(private Token: TokenService) { }

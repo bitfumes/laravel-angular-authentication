@@ -12,7 +12,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { JarwisService } from './services/jarwis.service';
-import { TokenService } from './Services/token.service';
+import { TokenService } from './services/token.service';
+import { AuthService } from './services/auth.service';
 
 
 
@@ -33,7 +34,7 @@ import { TokenService } from './Services/token.service';
     FormsModule,
     HttpClientModule
   ],
-  providers: [JarwisService, TokenService],
+  providers: [JarwisService, TokenService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
